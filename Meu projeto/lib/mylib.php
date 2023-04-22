@@ -22,7 +22,7 @@ function slide_area($data){
 /**
  * Cria a abertura de um bloco ligth
  * 
- * @param array associativo | dados do abertura_light(['titulo' => 'Serviços', 'descricao' => 'SERVIÇOS QUE PRESTAMOS'])
+ * @param array associativo | dados do abertura_light(['titulo' => 'Serviços', 'descricao' => 'SERVIÇOS QUE PRESTAMOS', 'id' => ' '])
  * @return string | cogido HTML
  * 
  */
@@ -103,6 +103,34 @@ function section_livros($data) {
                           <img src="'.$data['imagem'].'" />
                       </div>
                   </div>';
+
+    return $html;
+}
+
+
+/**
+ * Cria um bloco de estrutura para mostrar um livro
+ * 
+ * @param array associativo | slider_autor(['nome' => '' , 'role' => '' , 'imagem' => '']); ?>
+ * @return string | cogido HTML
+ */
+function slider_team($data) {
+    $html = '  
+    <div class="slide">                                
+        <div class="slidearea slider_time">
+            <img class="section-team--avatar" src="'.$data['imagem'].'" />
+            <div class="section-team--name">'.$data['nome'].'</div>
+            <div class="section-team--role">'.$data['role'].'</div>
+            <div class="section-team--social">
+                <a href=""><img src="assets/images/facebook.png" /></a>
+                <a href=""><img src="assets/images/googleplus.png" /></a>
+                <a href=""><img src="assets/images/linkedin.png" /></a>
+                <a href=""><img src="assets/images/pinterest.png" /></a>
+                <a href=""><img src="assets/images/twitter.png" /></a>
+            </div>
+        </div>
+    </div>';
+
 
     return $html;
 }

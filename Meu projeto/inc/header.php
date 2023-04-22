@@ -10,8 +10,8 @@
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#Empresa">Empresa</a></li>
                     <li><a href="#Servicos">Serviços</a></li>
-                    <li><a href="#Projetos">Projetos</a></li>
-                    <li><a href="#Time">Time</a></li>
+                    <li><a href="#Livros">Livros</a></li>
+                    <li><a href="#autor">Autores</a></li>
                     <li><a href="#Clientes">Clientes</a></li>
                     <li><a href="#Preco">Preço</a></li>
                     <li><a href="#Detalhes">Detalhes</a></li>
