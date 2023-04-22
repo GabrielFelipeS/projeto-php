@@ -155,6 +155,10 @@ span {
     justify-content: center;
     align-items: center;
 }
+
+
+
+
 .banner .pointer {
     width:15px;
     height:15px;
@@ -174,6 +178,11 @@ span {
     padding-top:50px;
     padding-bottom:50px;
     
+}
+
+#premium.default {
+    padding-top:50px;
+    padding-bottom:5px;
 }
 
 .default .section-title,
@@ -615,6 +624,7 @@ CSS DE ÁREAS ESPECÍFICAS
 #premium .section-body {
     max-width:initial;
 }
+
 .section-premium {
     overflow:hidden;
 }

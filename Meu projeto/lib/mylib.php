@@ -28,26 +28,24 @@ function slide_area($data){
  */
 
 function abertura_light($data) {
-    $html = '
-    <section class="default light" id="'.$data['id'].'">
+    $html = '<section class="default light " id="'.$data['id'].'">
     <div class="section-title">'.$data['titulo'].'</div>
     <div class="section-desc">'.$data['descricao'].'</div>
     <div class="section-body">';
-
     return $html;
 }
 
 /**
  * Cria a abertura de um bloco dark
  * 
- * @param array associativo | dados do abertura_dark(['titulo' => 'Serviços', 'descricao' => 'SERVIÇOS QUE PRESTAMOS'])
+ * @param array associativo | dados do abertura_dark(['titulo' => 'Serviços', 'descricao' => 'SERVIÇOS QUE PRESTAMOS', 'id' => ' '])
  * @return string | cogido HTML
  * 
  */
 
 function abertura_dark($data) {
     $html = '
-    <section class="default dark" id="'.$data['id'].'">
+    <section class="default dark " id="'.$data['id'].'">
     <div class="section-title">'.$data['titulo'].'</div>
     <div class="section-desc">'.$data['descricao'].'</div>
     <div class="section-body">';

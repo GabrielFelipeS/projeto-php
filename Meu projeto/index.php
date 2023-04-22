@@ -137,74 +137,12 @@
         </div>
         </section>
 
-        <?= abertura_light(['titulo' => 'Os livros', 'descricao' => 'Podem de levar a qualquer lugar no mundo', 'id' => 'premium']) ?>
-                            <!--Carousel Wrapper-->
-                <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-                    <!--Indicators-->
-                    <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
-                    </ol>
-                    <!--/.Indicators-->
-                    <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="view">
-                        <img class="d-block w-100" src="./media/harry.jpeg"
-                            alt="First slide">
-                        <div class="mask rgba-black-light"></div>
-                        </div>
-                        <div class="carousel-caption">
-                        <h3 class="h3-responsive">Hogwarts</h3>
-                        <p>Harry Potter e a Pedra Filosofal</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <!--Mask color-->
-                        <div class="view">
-                        <img class="d-block w-100" src="./media/paris.jpg"
-                            alt="Second slide">
-                        <div class="mask rgba-black-strong"></div>
-                        </div>
-                        <div class="carousel-caption">
-                        <h3 class="h3-responsive">Páris</h3>
-                        <p>Túnel de Ossos</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <!--Mask color-->
-                        <div class="view">
-                        <img class="d-block w-100" src="./media/summit.jpg"
-                            alt="Third slide">
-                        <div class="mask rgba-black-slight"></div>
-                        </div>
-                        <div class="carousel-caption">
-                        <h3 class="h3-responsive">Summit Lake</h3>
-                        <p>A Garota do lago</p>
-                        </div>
-                    </div>
-                    </div>
-                    <!--/.Slides-->
-                    <!--Controls-->
-                    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                    </a>
-                    <!--/.Controls-->
-                </div>
-                <!--/.Carousel Wrapper-->
-            </div>
+        <?= abertura_light(['titulo' => 'Os livros', 'descricao' => 'Podem te levar a qualquer lugar do mundo', 'id' => 'premium']) ?>
+        <?= include './inc/carrosel.php'; ?>      
+        </div>
         </section>
 
-        <section class="default dark" id="Detalhes">
-            <div class="section-title">Detalhes</div>
-            <div class="section-desc">About our work</div>
-            <div class="section-body">
+        <?= abertura_dark(['titulo' => 'Detalhes', 'descricao' => 'About our work', 'id' => 'Detalhes']) ?>
                 <div class="section-facts">
                     <div class="section-fact">
                         <h3>1000</h3>
@@ -288,7 +226,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section class="section-map">
             <div class="section-map--area">
                 <div class="section-map--info">
