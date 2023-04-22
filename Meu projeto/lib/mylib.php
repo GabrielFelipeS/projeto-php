@@ -29,7 +29,7 @@ function slide_area($data){
 
 function abertura_light($data) {
     $html = '
-    <section class="default light" id="Empresa">
+    <section class="default light" id="'.$data['id'].'">
     <div class="section-title">'.$data['titulo'].'</div>
     <div class="section-desc">'.$data['descricao'].'</div>
     <div class="section-body">';
@@ -47,7 +47,7 @@ function abertura_light($data) {
 
 function abertura_dark($data) {
     $html = '
-    <section class="default dark" id="Servicos">
+    <section class="default dark" id="'.$data['id'].'">
     <div class="section-title">'.$data['titulo'].'</div>
     <div class="section-desc">'.$data['descricao'].'</div>
     <div class="section-body">';

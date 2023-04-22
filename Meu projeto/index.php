@@ -13,15 +13,12 @@
               </div>
           </section>
 
-          <?= abertura_light(['titulo' => 'Sobre nós', 'descricao' => 'Quem somos?']) ?>
+          <?= abertura_light(['titulo' => 'Sobre nós', 'descricao' => 'Quem somos?', 'id' => 'Empresa']) ?>
 
           <div class="section-aboutus">
               <div class="section-aboutus--left">
 
-                  <p>A <span>Bibliotex</span> é a maior fornecedor de livros do Brasil, defendemos o incentivo a leitura
-                      de livros independentemente da idade, seja criança ou idoso. Livros foram feitos para serem lidos
-                      e a <span>Bibliotex</span> oferece os melhores livros com variedade para todos os gostos e idades,
-                      desde livros em quadrinhos, mangás a livros de romance clássicos.
+                  <p>A <span>Bibliotex</span> é a maior fornecedor de livros do Brasil, defendemos a eduacação eo incentivo a leitura. Livros foram feitos para serem lidos e deveriam ser lido por todos independentemente da idade, seja criança ou idoso.E a <span>Bibliotex</span> oferece os melhores livros com variedade para todos os gostos e idades, desde livros em quadrinhos, mangás a livros de romance clássicos.
                   </p>
 
                   <br />
@@ -34,7 +31,7 @@
           </div>
           </section>
 
-          <?= abertura_dark(['titulo' => 'Serviços', 'descricao' => 'SERVIÇOS QUE PRESTAMOS']) ?>
+          <?= abertura_dark(['titulo' => 'Serviços', 'descricao' => 'SERVIÇOS QUE PRESTAMOS', 'id' => 'Servicos']) ?>
           <div class="section-services">
               <?= section_service(['imagem' => 'assets/images/medalha.png', 'titulo' => 'Alta qualidade', 'paragrafo' => 'Livros com qualidade altissimos']) ?>
 
@@ -48,7 +45,7 @@
           </section>
 
 
-          <?= abertura_light(['titulo' => 'Livros', 'descricao' => 'Para gostos variados']) ?>
+          <?= abertura_light(['titulo' => 'Livros', 'descricao' => 'Para gostos variados', 'id' => 'Projetos']) ?>
           <div class="section-livros">
               <div class="section-livros--photos">
 
