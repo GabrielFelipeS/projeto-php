@@ -8,6 +8,11 @@
     background-image: none;
 }
 
+.carousel-item.active imagem {
+    width: 100px !important; 
+    height: 707px;
+}
+
 
 body {
     font-family:'Montserrat', Arial, Helvetica, sans-serif;
@@ -125,6 +130,11 @@ a.button:hover {
 }
 .banner h1 span{
 
+    display: flex;
+    justify-content: center;
+}
+
+#preco span {
     display: flex;
     justify-content: center;
 }
@@ -574,6 +584,7 @@ CSS DE ÁREAS ESPECÍFICAS
     margin-right: 20px;
     padding:20px;
     text-align:center;
+    
 }
 .section-price--item:last-child {
     margin-right:0;
@@ -597,11 +608,11 @@ CSS DE ÁREAS ESPECÍFICAS
     font-size:12px;
 }
 
-.premium {
+#premium {
     background-color:#FFF !important;
     border-top:1px solid #CCC;
 }
-.premium .section-body {
+#premium .section-body {
     max-width:initial;
 }
 .section-premium {

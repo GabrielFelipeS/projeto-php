@@ -134,3 +134,20 @@ function slider_team($data) {
 
     return $html;
 }
+
+/**
+ * @param array associativo | price_item(['nome' => '', 'preco' => '', 'periodo' => '','point1' => '', 'point2' => '', 'point3' => '', 'point4' => '']
+ * @return string | codigo HTML
+ */
+
+function price_item($data) {
+    $html = '<div class="section-price--item">
+        <div class="section-price--item-name">'.$data['nome'].'</div>
+            <div class="section-price--item-money">'.$data['preco'].'</div>
+            <div class="section-price--item-period">/'.$data['periodo'].'</div>
+            <div class="section-price--item-point">'.$data['item'].'<br />'.$data['desc'].'</div>
+        <a href="" class="button button--dark">ASSINE esse plano</a>
+    </div>';
+
+    return $html;
+}

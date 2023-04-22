@@ -18,7 +18,7 @@
         <div class="section-aboutus">
             <div class="section-aboutus--left">
 
-                <p>A <span>Bibliotex</span> é a maior fornecedor de livros do Brasil, defendemos a eduacação eo incentivo a leitura. Livros foram feitos para serem lidos e deveriam ser lido por todos independentemente da idade, seja criança ou idoso.E a <span>Bibliotex</span> oferece os melhores livros com variedade para todos os gostos e idades, desde livros em quadrinhos, mangás a livros de romance clássicos.
+                <p>A <span>Bibliotex</span> é a maior fornecedor de livros do Brasil, defendemos a eduacação e o incentivo a leitura. Livros foram feitos para serem lidos e deveriam ser lido por todos independentemente da idade, seja criança ou idoso. E a <span>Bibliotex</span> oferece os melhores livros com variedade para todos os gostos e idades, desde livros em quadrinhos e mangás a livros de romances clássicos.
                 </p>
 
                 <br />
@@ -100,137 +100,104 @@
 
 
         <?= abertura_light(['titulo' => 'Clientes', 'descricao' => 'Sugestões de clientes', 'id' => 'Clientes']) ?>
-                <div class="section-testimonials">
-                    <div class="sliders">
+        <div class="section-testimonials">
+            <div class="sliders">
 
-                        <div class="slide">
-                            <div class="slidearea">
-                                <img class="section-testimonials--avatar" src="media/homem2.png" />
-                                <div class="section-testimonials--name">John Doe</div>
-                                <div class="section-testimonials--role">Head of PR Department</div>
-                                <img class="section-testimonials--quoteimg" src="assets/images/quote.png" />
-                                <div class="section-testimonials--quote">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Sed vel eros vitae erat condimentum viverra a nec lacus. Maecenas
-                                    eros lectus, rhoncus vel dictum vel, dignissim eget ligula. Vestibulum id tempus
-                                    quam, sed pellentesque quam.</div>
-                            </div>
-                        </div>
-    
+                <div class="slide">
+                    <div class="slidearea">
+                        <img class="section-testimonials--avatar" src="media/homem2.png" />
+                        <div class="section-testimonials--name">John Doe</div>
+                        <div class="section-testimonials--role">Head of PR Department</div>
+                        <img class="section-testimonials--quoteimg" src="assets/images/quote.png" />
+                        <div class="section-testimonials--quote">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Sed vel eros vitae erat condimentum viverra a nec lacus. Maecenas
+                            eros lectus, rhoncus vel dictum vel, dignissim eget ligula. Vestibulum id tempus
+                            quam, sed pellentesque quam.</div>
                     </div>
                 </div>
+
             </div>
+        </div>
+        </div>
         </section>
 
         <?= include './inc/companies.php'; ?>
 
-        <section class="default light" id="Preco">
-            <div class="section-title">Preços</div>
-            <div class="section-desc">Pricing Table</div>
-            <div class="section-body">
-                <div class="section-price">
-                    <div class="section-price--item">
-                        <div class="section-price--item-name">Express</div>
-                        <div class="section-price--item-money">$ 9.99</div>
-                        <div class="section-price--item-period">/ month</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <a href="" class="button button--dark">Choose</a>
-                    </div>
-                    <div class="section-price--item">
-                        <div class="section-price--item-name">Express</div>
-                        <div class="section-price--item-money">$ 9.99</div>
-                        <div class="section-price--item-period">/ month</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <a href="" class="button button--dark">Choose</a>
-                    </div>
-                    <div class="section-price--item">
-                        <div class="section-price--item-name">Express</div>
-                        <div class="section-price--item-money">$ 9.99</div>
-                        <div class="section-price--item-period">/ month</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <a href="" class="button button--dark">Choose</a>
-                    </div>
-                    <div class="section-price--item">
-                        <div class="section-price--item-name">Express</div>
-                        <div class="section-price--item-money">$ 9.99</div>
-                        <div class="section-price--item-period">/ month</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <div class="section-price--item-point">Tracking issues<br />--</div>
-                        <a href="" class="button button--dark">Choose</a>
-                    </div>
-                </div>
-            </div>
+        <?= abertura_light(['titulo' => 'Preços', 'descricao' => 'Assinaturas', 'id' => 'Preco']) ?>
+        <div class="section-price">
+            <?= price_item(['nome' => 'Leitor Bebê', 'preco' => 'R$ 10.00', 'periodo' => 'Mês', 'item' => '<span>Esse plano é: </span>', 'desc' => 'Para pequenos leiores que acabaram de chegar ao mundo ou ainda estão aprendendo a falar e descobrindo o mundo ao seu redor'])?>
+            
+            <?= price_item(['nome' => 'Leitor iniciante', 'preco' => 'R$ 18.90', 'periodo' => 'Mês', 'item' => '<span>Esse plano é: </span>', 'desc' => 'Para leitores que necessitam de alguma ajuda para ler ou que estão se aventurando pelo vasto mundo da leitura'])?>
+
+            <?= price_item(['nome' => 'Leitor autônomo', 'preco' => 'R$ 29.90', 'periodo' => 'Mês', 'item' => '<span>Esse plano é: </span>', 'desc' => 'Para crianças e jovens que já se tornaram grandes leitores e se atreven a ler obras mais completas e longas'])?>
+
+            <?= price_item(['nome' => 'Leitor Experiente', 'preco' => 'R$ 49.99', 'periodo' => 'Mês', 'item' => '<span>Esse plano é: </span>', 'desc' => 'Para leitores veteranos que não tem medo de se arriscar em um mundo completamente novo e cheio de novos livros'])?>
+
+        </div>
+        </div>
         </section>
 
-        <section class="default light premium">
-            <div class="section-title">Premium</div>
-            <div class="section-desc">Even More Features Available</div>
-            <div class="section-body">
-                <div class="section-premium">
-                    <div class="sliders" style="margin-left:0;">
-                        <div class="slide">
-                            <div class="slidearea">
-                                <div class="section-premium--left">
-                                    <img src="media/livros.png" />
-                                </div>
-                                <div class="section-premium--right">
-                                    <div class="section-premium--item">
-                                        <img src="assets/images/check.png" />
-                                        <div>
-                                            <h4>FIRST FEATURE</h4>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eros
-                                            vitae erat condimentum viverra a nec lacus.<br />
-                                            -- FEATURE ONE<br />
-                                            -- FEATURE TWO<br />
-                                            -- FEATURE THREE
-                                        </div>
-                                    </div>
-                                    <div class="section-premium--item">
-                                        <img src="assets/images/check.png" />
-                                        <div>
-                                            <h4>SECOND FEATURE</h4>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eros
-                                            vitae erat condimentum viverra a nec lacus.
-                                        </div>
-                                    </div>
-                                    <div class="section-premium--item">
-                                        <img src="assets/images/check.png" />
-                                        <div>
-                                            <h4>THIRD FEATURE</h4>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eros
-                                            vitae erat condimentum viverra a nec lacus.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <?= abertura_light(['titulo' => 'Os livros', 'descricao' => 'Podem de levar a qualquer lugar no mundo', 'id' => 'premium']) ?>
+                            <!--Carousel Wrapper-->
+                <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="view">
+                        <img class="d-block w-100" src="./media/harry.jpeg"
+                            alt="First slide">
+                        <div class="mask rgba-black-light"></div>
                         </div>
-                        <div class="slide">
-                            <div class="slidearea">
-                                ...
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="slidearea">
-                                ...
-                            </div>
+                        <div class="carousel-caption">
+                        <h3 class="h3-responsive">Hogwarts</h3>
+                        <p>Harry Potter e a Pedra Filosofal</p>
                         </div>
                     </div>
-                    <div class="sliders-pointers">
-                        <div class="pointer active"></div>
-                        <div class="pointer"></div>
-                        <div class="pointer"></div>
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                        <img class="d-block w-100" src="./media/paris.jpg"
+                            alt="Second slide">
+                        <div class="mask rgba-black-strong"></div>
+                        </div>
+                        <div class="carousel-caption">
+                        <h3 class="h3-responsive">Páris</h3>
+                        <p>Túnel de Ossos</p>
+                        </div>
                     </div>
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                        <img class="d-block w-100" src="./media/summit.jpg"
+                            alt="Third slide">
+                        <div class="mask rgba-black-slight"></div>
+                        </div>
+                        <div class="carousel-caption">
+                        <h3 class="h3-responsive">Summit Lake</h3>
+                        <p>A Garota do lago</p>
+                        </div>
+                    </div>
+                    </div>
+                    <!--/.Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
                 </div>
+                <!--/.Carousel Wrapper-->
             </div>
         </section>
 
