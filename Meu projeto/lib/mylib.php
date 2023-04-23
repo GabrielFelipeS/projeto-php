@@ -9,8 +9,8 @@
 */
 
 function slide_area($data){
-    $html = '<div class="slide"><div class="slidearea"><h1>'.$data['titulo'].'<br/><span>'.$data['titulo_colorido'].'</span></h1><h2>'.$data['subtitulo'].'</h2><a href="" class="button">'.$data['botao'].'!</a></div>
-                <div class="sliders-pointers">
+    $html = '<div class="slide "><div class="slidearea sem_fundo"><h1>'.$data['titulo'].'<br/><span>'.$data['titulo_colorido'].'</span></h1><h2>'.$data['subtitulo'].'</h2><a href="" class="button">'.$data['botao'].'!</a></div>
+                <div class="sliders-pointers ">
                   <div class="pointer '. $data['button1'].'"></div>
                   <div class="pointer '. $data['button2'].'"></div>
                 </div>
@@ -149,3 +149,64 @@ function price_item($data) {
 
     return $html;
 }
+
+/**
+ * Escreve uma linha em um arquivo
+ * @param $file: o nome do arquivo
+ * @param $txt: o texto a ser escrito
+*/
+
+function wline($file, $txt){
+    fwrite($file, "$txt\r\n");
+}
+
+/**
+ * Lê uma linha em um arquivo
+ * @param $filename: nome do arquivo
+ * @return string | codigo HTML
+ */
+function rfile($filename){
+    $myfile = fopen($filename, "r") or die("Você não tem permissão para gravar neste diretório!");
+    $slide = [];
+    
+    while(!feof($myfile)){
+        $nome = fgets($myfile);
+        if ($nome == ''){
+            break;
+        }
+        $email = fgets($myfile);
+        $assunto = fgets($myfile);
+        $sugestao = fgets($myfile);
+        $imagem = fgets($myfile);
+
+        $slide[] = '<div class="slide">
+                    <div class="slidearea">
+                        <img class="section-testimonials--avatar" src="./lib/imagens/'.$imagem.'" />
+                        <div class="section-testimonials--name">'.$nome.'</div>
+                        <div class="section-testimonials--role">'.$assunto.'</div>
+                        <img class="section-testimonials--quoteimg" src="assets/images/quote.png" />
+                        <div class="section-testimonials--quote">'.$sugestao.'</div>
+                    </div>
+                </div>';
+    }
+    fclose($myfile);
+    return $slide;
+}
+
+
+
+
+
+/*
+function rfile($filename){
+    $myfile = fopen($filename, "r") or die("Você não tem permissão para gravar neste diretório!");
+    $lines = [];
+
+    while(!feof($myfile)){
+        $lines[] = fgets($myfile);
+    }
+    
+    fclose($myfile);
+    return $lines;
+}
+*/

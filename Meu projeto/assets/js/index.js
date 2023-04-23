@@ -31,6 +31,6 @@ function Selecionarbanner_2(botao2) {
     teste2.classList.remove('margem-negativa');
 }
 
-
-
-
+function alerta () {
+    alert("Sua sugestão foi enviada!");
+}

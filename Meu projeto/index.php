@@ -55,7 +55,7 @@
 
                 <?= section_livros(['titulo' => 'A Guerra dos Tronos : As Crônicas de Gelo e Fogo', 'paragrafo' => 'A guerra dos tronos é o primeiro livro da série best-seller internacional As Crônicas de Gelo e Fogo, que deu origem à adaptação de sucesso da HBO, Game of Thrones.', 'imagem' => 'media/livros3.jpg']) ?>
 
-                <?= section_livros(['titulo' => 'Decifra-me<', 'paragrafo' => 'Prepare-se para mais um livro imperdível de Tahereh Mafi, narrado sob o ponto de vista de Kenji Kishimoto, um dos personagens mais queridos pelos fãs da série Estilhaça-me. Decifra-me reúne os contos Proteja-me e Revela-me, que vão te trazer de volta ao mundo distópico de Estilhaça-me antes do desfechotriunfal da série!', 'imagem' => 'media/livros4.jpg']) ?>
+                <?= section_livros(['titulo' => 'Decifra-me', 'paragrafo' => 'Prepare-se para mais um livro imperdível de Tahereh Mafi, narrado sob o ponto de vista de Kenji Kishimoto, um dos personagens mais queridos pelos fãs da série Estilhaça-me. Decifra-me reúne os contos Proteja-me e Revela-me, que vão te trazer de volta ao mundo distópico de Estilhaça-me antes do desfechotriunfal da série!', 'imagem' => 'media/livros4.jpg']) ?>
 
                 <?= section_livros(['titulo' => 'Um tom mais escuro de magia', 'paragrafo' => 'Um tom mais escuro de magia é o início de um universo de aventuras audaciosas, poder e múltiplas cidades de Londres.', 'imagem' => 'media/livros5.jpg']) ?>
 
@@ -99,24 +99,15 @@
         </section>
 
 
+        <!-- CARREGAMENTO DAS SUGESTOES DO CLIENTE -->
         <?= abertura_light(['titulo' => 'Clientes', 'descricao' => 'Sugestões de clientes', 'id' => 'Clientes']) ?>
         <div class="section-testimonials">
-            <div class="sliders">
+        <div class="sliders">
+            
+                <?php  $slides = rfile('./inc/sugestoes'); echo implode('<br>', $slides);?>
+            
 
-                <div class="slide">
-                    <div class="slidearea">
-                        <img class="section-testimonials--avatar" src="media/homem2.png" />
-                        <div class="section-testimonials--name">John Doe</div>
-                        <div class="section-testimonials--role">Head of PR Department</div>
-                        <img class="section-testimonials--quoteimg" src="assets/images/quote.png" />
-                        <div class="section-testimonials--quote">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Sed vel eros vitae erat condimentum viverra a nec lacus. Maecenas
-                            eros lectus, rhoncus vel dictum vel, dignissim eget ligula. Vestibulum id tempus
-                            quam, sed pellentesque quam.</div>
-                    </div>
-                </div>
-
-            </div>
+        </div>
         </div>
         </div>
         </section>
@@ -142,58 +133,58 @@
         </div>
         </section>
 
-        <?= abertura_dark(['titulo' => 'Detalhes', 'descricao' => 'About our work', 'id' => 'Detalhes']) ?>
-                <div class="section-facts">
-                    <div class="section-fact">
-                        <h3>1000</h3>
-                        <div class="section-fact-line"></div>
-                        <h4>Design livros Released</h4>
-                        <p>Donec tincidunt cursus</p>
-                    </div>
-                    <div class="section-fact">
-                        <h3>900</h3>
-                        <div class="section-fact-line"></div>
-                        <h4>Photos</h4>
-                        <p>Morbi ex felis, tincidunt sed hendrerit</p>
-                    </div>
-                    <div class="section-fact">
-                        <h3>500</h3>
-                        <div class="section-fact-line"></div>
-                        <h4>Marketing Ideas</h4>
-                        <p>Donec tincidunt cursus</p>
-                    </div>
-                    <div class="section-fact">
-                        <h3>100</h3>
-                        <div class="section-fact-line"></div>
-                        <h4>Exhibitions</h4>
-                        <p>Morbi ex felis, tincidunt sed</p>
-                    </div>
-                </div>
+        <?= abertura_dark(['titulo' => 'Detalhes', 'descricao' => 'Sobre nossa empresa', 'id' => 'Detalhes']) ?>
+        <div class="section-facts">
+            <div class="section-fact">
+                <h3>10000</h3>
+                <div class="section-fact-line"></div>
+                <h4>Assinantes</h4>
+                <p>Nem Luke tem tantos</p>
             </div>
+            <div class="section-fact">
+                <h3>900</h3>
+                <div class="section-fact-line"></div>
+                <h4>Livros</h4>
+                <p>Uma variedade tão grande quanto a biblioteca da meia-noite</p>
+            </div>
+            <div class="section-fact">
+                <h3>500</h3>
+                <div class="section-fact-line"></div>
+                <h4>Lojas</h4>
+                <p>Espalhadas por todo Brasil</p>
+            </div>
+            <div class="section-fact">
+                <h3>100</h3>
+                <div class="section-fact-line"></div>
+                <h4>Boxes de livros</h4>
+                <p>Nem mesmo no olimpo cabe tanto livro</p>
+            </div>
+        </div>
+        </div>
         </section>
 
         <section class="section-share">
             <div class="section-share--legend">
                 <img src="assets/images/share.png" />
-                Tell About Us:
+                Compartilhe em:
             </div>
             <div class="section-share--item">
                 <div class="section-share--icon twitter">
                     <img src="assets/images/twitter.png" />
                 </div>
-                152
+                564
             </div>
             <div class="section-share--item">
                 <div class="section-share--icon linkedin">
                     <img src="assets/images/linkedin.png" />
                 </div>
-                152
+                260
             </div>
             <div class="section-share--item">
                 <div class="section-share--icon facebook">
                     <img src="assets/images/facebook.png" />
                 </div>
-                152
+                486
             </div>
             <div class="section-share--item">
                 <div class="section-share--icon googleplus">
@@ -205,67 +196,69 @@
                 <div class="section-share--icon pinterest">
                     <img src="assets/images/pinterest.png" />
                 </div>
-                152
+                349
             </div>
         </section>
 
-        <section class="default light" id="Sugestoes">
-            <div class="section-title">Sugestões</div>
-            <div class="section-desc">Our Agency Located in Melbourne, Australia</div>
-            <div class="section-body">
-                <div class="section-contact">
-                    <form method="POST">
-                        <div class="section-contact--split">
-                            <input type="text" name="name" placeholder="NAME" />
-                            <input type="text" name="name" placeholder="EMAIL" />
-                        </div>
-                        <input type="text" name="name" placeholder="SUBJECT" />
-                        <textarea name="message" placeholder="MESSAGE"></textarea>
-                        <input type="submit" value="Send Message" class="button" onClick="window.location.reload(true)"/>
-                    </form>
+
+        <?=  abertura_light(['titulo' => 'Sugestões', 'descricao' => 'Our Agency Located in Melbourne, Australia', 'id' => 'Sugestoes'])?>
+        <div class="section-contact">
+            <form method="POST" enctype="multipart/form-data" action="./inc/sugestao.php">
+                <div class="section-contact--split">
+                    <input type="text" name="name" placeholder="NOME" required/>
+                    <input type="text" name="email" placeholder="EMAIL" required/>
                 </div>
-            </div>
+                <input type="text" name="assunto" placeholder="ASSUNTO" required/>
+                <textarea name="message" placeholder="SUGESTAO" required></textarea>
+                <div class="custom-file">
+                            <input type="file" accept="image/*" class="custom-file-input" id="imagem" name="imagem" required>                        
+                            <label class="custom-file-label" for="comprovonte">Escolher arquivo</label>
+                </div>
+                <input type="submit" value="Envie a mensagem" class="button"/>
+            </form>
+        </div>
+        </div>
         </section>
         
-        <section class="section-map">
+        <section class="section-map" title="CONTATOS">
             <div class="section-map--area">
                 <div class="section-map--info">
                     <div class="section-map--info-item">
+                        <br>
                         <div class="section-map--info-item-img">
                             <img src="assets/images/carta.png" />
                         </div>
-                        Endereço completão que irá ter algum tamanho
+                        bibliiotex@leitores.com
                     </div>
                     <div class="section-map--info-item">
                         <div class="section-map--info-item-img">
                             <img src="assets/images/localizacao.png" />
                         </div>
-                        Endereço completão que irá ter algum tamanho
+                        Av. Salgado Filho, 3501 - Centro, Guarulhos - SP, 07115-000
                     </div>
                     <div class="section-map--info-item">
                         <div class="section-map--info-item-img">
                             <img src="assets/images/telefone.png" />
                         </div>
-                        Endereço completão que irá ter algum tamanho
+                        (11) 1234-5678
                     </div>
                     <div class="section-map--info-item">
                         <div class="section-map--info-item-img">
                             <img src="assets/images/arroba.png" />
                         </div>
-                        Endereço completão que irá ter algum tamanho
+                        @bibliotex
                     </div>
                     <div class="section-map--info-item">
                         <div class="section-map--info-item-img">
                             <img src="assets/images/web.png" />
                         </div>
-                        Endereço completão que irá ter algum tamanho
+                        www.bibliotex.com
                     </div>
                 </div>
             </div>
         </section>
 
       </main>
-
 
       <?php include './inc/footer.php'; ?>
       <?php include './inc/rodape.php'; ?>

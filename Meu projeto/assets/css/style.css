@@ -5,8 +5,8 @@
 }
 .margem-negativa{
     margin-left: -100vw;
-    background-image: none;
 }
+
 
 .carousel-item.active imagem {
     width: 100px !important; 
@@ -97,7 +97,7 @@ a.button:hover {
     background-color:#B28756;
 }
 
-.banner {
+.banner  {
     height:calc(100vh - 100px);
     background-color:#333;
     background-image:url('../images/bg.jpg');
@@ -105,6 +105,10 @@ a.button:hover {
     background-position:bottom;
     overflow:hidden;
 }
+.banner.margem-negativa {
+    background-image: none;
+}
+
 .banner .sliders {
     width:1000vw;
     height:100%;
@@ -393,6 +397,7 @@ CSS DE ÁREAS ESPECÍFICAS
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    
     color:#000;
 }
 .section-livros--photoinfo h5 {
@@ -509,7 +514,6 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-testimonials .slide {
     width:100vw;
     height:100%;
-    display:inline-block;
 }
 .section-testimonials .slidearea {
     display:flex;
@@ -521,8 +525,12 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 
 .section-testimonials--avatar {
-    width:100px;
+    width:110px;
+    height: 110px;
+    margin-top: 10px;
+    border-radius: 50%;
 }
+
 .section-testimonials--name {
     font-weight: bold;
     font-size:16px;
@@ -798,6 +806,7 @@ CSS DE ÁREAS ESPECÍFICAS
     border-bottom:1px solid #CCC;
     outline:0;
     margin-top:10px;
+    margin-bottom: 10px;
 }
 .section-contact textarea {
     height:100px;
@@ -856,7 +865,14 @@ CSS DE ÁREAS ESPECÍFICAS
     height:auto;
 }
 
+.section-map--info-item:hover img{
+    filter: invert();
+}
 
+form .button:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 
 

@@ -10,12 +10,12 @@
             </div>
         </div>
         <div class="footer--item area2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eros vitae erat condimentum viverra a nec lacus. Maecenas eros lectus, rhoncus vel dictum vel, dignissim eget ligula. Vestibulum id tempus quam, sed pellentesque quam. Vestibulum porta aliquet risus, ac rhoncus sem aliquet ac. Donec tincidunt cursus elit vitae euismod.
+                A <span>Bibliotex</span> defende a melhoria continua, então sugestões e criticas construtivas dos nossos serviços são sempre bem-vindas, a felicidade do nossos clientes é a nossa felicidade.
         </div>
         <div class="footer--item area3">
-            <form method="POST">
-                <input type="email" name="email" placeholder="EMAIL TO SUBSCRIBE" />
-                <button class="button">Subscribe</button>
+            <form method="POST" action="./inc/cadastrar_email.php">
+                <input type="email" name="email" placeholder="INSIRA UM EMAIL PARA SE CADASTRAR" required/>
+                <button class="button">Inscreva-se</button>
             </form>
         </div>
     </div>
