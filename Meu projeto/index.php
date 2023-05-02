@@ -104,7 +104,8 @@
         <div class="section-testimonials">
         <div class="sliders">
             
-                <?php  $slides = rfile('./inc/sugestoes'); echo implode('<br>', $slides);?>
+                <?php  $slides = rfile('./inc/sugestoes'); 
+                echo implode('<br>', $slides);?>
             
 
         </div>
@@ -262,6 +263,9 @@
 
       <?php include './inc/footer.php'; ?>
       <?php include './inc/rodape.php'; ?>
+
+
+
   </body>
 
   </html>

@@ -4,8 +4,8 @@
             <div class="logoimg"><img src="./assets/images/livro_icon.png" alt="icone livro"></div>
         </div>
         <div class="menu">
-            <img class="menu-opener" src="assets/images/menu.png" />
-            <nav>
+            <img class="menu-opener" src="assets/images/menu.png" onclick="clickMenu()"/>
+            <nav id="nav">
                 <ul>
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#Empresa">Empresa</a></li>

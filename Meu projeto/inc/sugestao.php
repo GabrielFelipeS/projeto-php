@@ -31,8 +31,7 @@
             wline($myfile, $_POST['assunto']);
             wline($myfile, $_POST['message']);
             wline($myfile, $new_name);
-            fclose($myfile);
-            header('Location: ../index.php');
+            break;
         }
     }
 

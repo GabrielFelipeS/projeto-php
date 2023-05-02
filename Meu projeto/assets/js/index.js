@@ -34,3 +34,12 @@ function Selecionarbanner_2(botao2) {
 function alerta () {
     alert("Sua sugestão foi enviada!");
 }
+
+function clickMenu() {
+    if (nav.style.display == 'block'){
+        nav.style.display = 'none';
+        
+    } else {
+        nav.style.display = 'block';
+    }
+}

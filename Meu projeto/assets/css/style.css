@@ -1049,8 +1049,20 @@ form .button:hover {
         width:100%;
     }
 
+    .section-livros--photoarea,
+    .section-livros--photoarea img{
+        margin:10px;
+        width:260px;
+        height:360px;
+    }
+
+    .section-livros--photoarea{
+        margin-bottom: 180px;
+    }
+
     .section-services {
-        flex-wrap:wrap;
+        display: flex;
+        flex-direction: column;
     }
     .section-service {
         min-width:100%;
@@ -1072,8 +1084,8 @@ form .button:hover {
         height:190px;
     }
 
-    .section-team {
-        max-width:280px;
+    .section-team .sliders .slide {
+        width: inherit;
     }
 
     .section-companies--area {
