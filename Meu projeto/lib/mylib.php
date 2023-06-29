@@ -48,7 +48,7 @@ function abertura_dark($data) {
     <section class="default dark " id="'.$data['id'].'">
     <div class="section-title">'.$data['titulo'].'</div>
     <div class="section-desc">'.$data['descricao'].'</div>
-    <div class="section-body">';
+    <div class="section-body ">';
     return $html;
 }
 
@@ -80,13 +80,16 @@ function section_service($data) {
  */
 
 function section_livros($data) {
+    $botao = key_exists('botao', $data)? $data['botao']: '<button type="button" class="btn 
+    btn-primary">Comprar</button>';
+    $estilo = key_exists('estilo', $data)? $data['estilo']: '';
     $html = '
     <div class="section-livros--photo">
                       <div class="section-livros--photoarea">
                           <div class="section-livros--photoinfo">
                               <div class="card text-center ">
                                   <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                      <img src="'.$data['imagem'].'" class="img-fluid" />
+                                      <img src="'.$data['imagem'].'" style="'.$estilo.'" class="img-fluid" />
                                       <a href="#!">
                                           <div class="mask"></div>
                                       </a>
@@ -94,7 +97,7 @@ function section_livros($data) {
                                   <div class="card-header">'.$data['titulo'].'</div>
                                   <div class="card-body">
                                       <p class="card-text">'.$data['paragrafo'].'</p>
-                                      <button type="button" class="btn btn-primary">Comprar</button>
+                                      '.$data['botao'].'
                                   </div>
                               </div>
                           </div>
@@ -191,4 +194,56 @@ function rfile($filename){
     }
     fclose($myfile);
     return $slide;
+}
+
+function carregarLivros() {
+    $html = "";
+    $livros = getAll("livros");
+    foreach($livros as $livro) {               
+        $html .= section_livros(['titulo' => $livro['nomeLivro'], 'paragrafo' => $livro['descricao'], 'imagem' => $livro['nome_da_foto'], 'botao' => '<a href="comprarLivro.php?ISBN='.$livro['ISBN'].'"><button type="button" class="btn btn-primary">Comprar</button></a>']);
+    }        
+    echo $html;
+}
+
+function carregarLivrosParaEditar() {
+    $html = "";
+    $livros = getAll("livros");
+    foreach($livros as $livro) {               
+        $html .= section_livros(['titulo' => $livro['nomeLivro'], 'paragrafo' => '
+        <a href="./inc/excluirLivro.php?ISBN='.$livro['ISBN'].'"><button type="button" class="btn btn-primary" style="background-color: black; border-color: black; margin-right: 25px;"><img style="width: 30px;  filter: invert(1);"" src="./assets/images/excluir.png" alt="excluir" ></button></a>  
+        <a href="editarLivro.php?ISBN='.$livro['ISBN'].'"><button type="button" class="btn btn-primary" style="background-color: black; border-color: black;"><img style="width: 30px; filter: invert(1);" src="./assets/images/editar.png" alt="editar"></button></a>', 'imagem' => $livro['nome_da_foto']]);
+    }
+    echo $html;    
+}
+
+
+
+function carregarfunc() {
+    $html = "";
+    $vendedores = getAll("vendedor");
+    foreach($vendedores as $vendedor) {               
+        $html .= "<div class='space'> Nome: ".$vendedor['nomeCompleto']."</br>".
+                 "CPF: ".$vendedor['cpf']."</br>".
+                 "Data de nascimento: ".$vendedor['data_de_nascimento']."</br>".
+                 "Nacionalidade: ".$vendedor['nascionalidade'].
+
+                 '</br><a href="./inc/excluirVendedor.php?cod='.$vendedor['codigo_vendedor'].'"><button type="button" class="btn btn-primary" style="background-color: black; border-color: black; margin-top: 20px;"><img style="width: 30px; filter: invert(1);"" src="./assets/images/excluir.png" alt="excluir" ></button></a>  
+
+                 <a href="editarVendedor.php?cod='.$vendedor['codigo_vendedor'].'"><button type="button" class="btn btn-primary" style="background-color: black; border-color: black; margin-top: 20px;"><img style="width: 30px; filter: invert(1);" src="./assets/images/editar.png" alt="editar"></button></a>'."</div>";
+    }
+    echo $html;
+}
+
+function dados_do_livro($dadosDoLivro) {
+    $html = '';
+
+    $html .= @section_livros(['titulo' => $dadosDoLivro['nomeLivro'], 'paragrafo' => $dadosDoLivro['descricao'], 'imagem' => $dadosDoLivro['nome_da_foto'],'botao' => '<a href="comprarLivro.php?ISBN='.$dadosDoLivro['ISBN'].'"><button type="button" class="btn btn-primary">Comprar</button></a>', 'botao' => '']);
+
+    #$html = "<img style=' width:200px; height:280px;' src= ./".$dadosDoLivro['nome_da_foto']." alt='Capa do livro> '";
+    #$html .= '<div "><p><strong> '.$dadosDoLivro['nomeLivro'].'</strong></p></br>';
+    #$html .= '';
+    
+
+
+    return $html;
 }
