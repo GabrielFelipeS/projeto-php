@@ -11,6 +11,9 @@
         </div>
         <div class="footer--item area2">
                 A <span>Bibliotex</span> defende a melhoria continua, então sugestões e criticas construtivas dos nossos serviços são sempre bem-vindas, a felicidade do nossos clientes é a nossa felicidade.
+                <p>     
+                    <span><a href="cadastrar_vendedor.php" class="no_decoration">VENHA TRABALAHR CONOSCO!!</a></span>
+                </p>
         </div>
         <div class="footer--item area3">
             <form method="POST" action="./inc/cadastrar_email.php">

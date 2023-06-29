@@ -1,3 +1,5 @@
+<?php include 'path.php' ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,5 +15,7 @@
   <link rel="stylesheet" href="./assets/mdb/css/bootstrap.min.css">
   
   <link rel="stylesheet" href="./assets/mdb/css/style.css">
-   <!--  -->
+   <!--  
+  
+-->
     

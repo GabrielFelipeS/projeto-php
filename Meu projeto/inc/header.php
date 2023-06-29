@@ -1,3 +1,4 @@
+
 <header>
     <div class="header">
         <div class="logo">
@@ -7,15 +8,16 @@
             <img class="menu-opener" src="assets/images/menu.png" onclick="clickMenu()"/>
             <nav id="nav">
                 <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#Empresa">Empresa</a></li>
-                    <li><a href="#Servicos">Serviços</a></li>
-                    <li><a href="#Livros">Livros</a></li>
-                    <li><a href="#autor">Autores</a></li>
-                    <li><a href="#Clientes">Clientes</a></li>
-                    <li><a href="#Preco">Preço</a></li>
-                    <li><a href="#Detalhes">Detalhes</a></li>
-                    <li><a href="#Sugestoes">Sugestoes</a></li>
+                    <li class="active"><a href="../Meu projeto/index.php#">Home</a></li>
+                    <li><a href="../Meu projeto/index.php#Empresa">Empresa</a></li>
+                    <li><a href="../Meu projeto/index.php#Servicos">Serviços</a></li>
+                    <li><a href="../Meu projeto/index.php#Livros">Livros</a></li>
+                    <li><a href="../Meu projeto/index.php#autor">Autores</a></li>
+                    <li><a href="../Meu projeto/index.php#Clientes">Clientes</a></li>
+                    <li><a href="../Meu projeto/index.php#Preco">Preço</a></li>
+                    <li><a href="../Meu projeto/index.php#Detalhes">Detalhes</a></li>
+                    <li><a href="../Meu projeto/index.php#Sugestoes">Sugestoes</a></li>
+                    <li><a href="../Meu projeto/exibirCompras.php">Vendas</a></li>
                 </ul>
             </nav>
         </div>

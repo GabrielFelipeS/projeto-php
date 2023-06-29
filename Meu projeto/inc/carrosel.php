@@ -1,5 +1,5 @@
             <!--Carousel Wrapper-->
-            <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+            <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" >
                     <!--Indicators-->
                     <ol class="carousel-indicators">
                     <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
@@ -51,10 +51,12 @@
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next" >
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                     </a>
                     <!--/.Controls-->
+                  
                 </div>
                 <!--/.Carousel Wrapper-->
+                
