@@ -29,11 +29,12 @@ insert into livros values ("012",  "Corte de Nevoa e Fúria", 72, "Por amor ela 
 #drop table endereco;
 #drop table compras;
 
-select * from livros;
-select * from vendedor;
-select * from endereco;
-select * from compras;
+#select * from livros;
+#select * from vendedor;
+#select * from endereco;
+#select * from compras;
 #SELECT * FROM vendedor, endereco WHERE endereco.cpf = cpf AND endereco.cpf = 2;
+
 CREATE TABLE if not exists vendedor(
 	codigo_vendedor INT AUTO_INCREMENT,
 	cpf varchar(13) UNIQUE,
