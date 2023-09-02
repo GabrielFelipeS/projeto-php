@@ -8,16 +8,20 @@
     
     $partes = explode("-",$_GET['ISBN']);
     $ISBN = $partes[0];
-    $id = $partes[1];
+    $id = empty($partes[1])? '': $partes[1];
 
     $titulo = empty($partes[2])? 'Comprando o livro!': $partes[2];
 
     $link = empty($partes[3])? 'cadastrarCompra.php?ISBN='.$ISBN: $partes[3].$id.'-'.$ISBN;
 
     $dadosDoLivro = get('livros', "ISBN = $ISBN");
+    if($id != '') {
+        $_POST = get('compras', "id = $id");
+        $quantidade = $_POST['valor']/$dadosDoLivro['valorLivro'];
+    } else {
+        $quantidade = '';
+    }
 
-    $_POST = get('compras', "id = $id");
-    $quantidade = $_POST['valor']/$dadosDoLivro['valorLivro'];
 ?>
 
 
