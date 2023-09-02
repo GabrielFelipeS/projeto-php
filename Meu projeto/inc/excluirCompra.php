@@ -4,5 +4,5 @@ include '../lib/database.php';
 include 'connection.php'; 
 
 $ID = $_GET['id'];
-delete('livros', ["id = $ID"]);
+delete('compras', ["id = $ID"]);
 header('Location: ../ExibirCompras.php');

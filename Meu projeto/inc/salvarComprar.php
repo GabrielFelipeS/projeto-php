@@ -13,7 +13,8 @@
 
     echo '</br>ID: '.$ID;
     echo '</br>ISBN: '.$ISBN;
-    echo '</br>Valor: ';$valor;
+    echo '</br>Valor: '.$valor;
+
     modificar('compras', ['id = "'.$ID.'"','cpfComprador = "'. $_POST['cpf'].'"', 'ISBNlivro = "'.$ISBN.'"', 'codVendedor = "'.$_POST['codigo_vendedor'].'"', 'valor = "'.$valor.'"', 'cartao = "'.$_POST['cartao'].'"'], "id = $ID");
 
     header('Location: ../ExibirCompras.php');
