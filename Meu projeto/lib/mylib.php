@@ -222,10 +222,11 @@ function carregarfunc() {
     $html = "";
     $vendedores = getAll("vendedor");
     foreach($vendedores as $vendedor) {               
-        $html .= "<div class='space'> Nome: ".$vendedor['nomeCompleto']."</br>".
-                 "CPF: ".$vendedor['cpf']."</br>".
+        $html .= "<div class='space'> Codigo do vendedor: ".$vendedor['codigo_vendedor']."</br>".
+                "Nome: ".$vendedor['nomeCompleto']."</br>".
+                "CPF: ".$vendedor['cpf']."</br>".
                  "Data de nascimento: ".$vendedor['data_de_nascimento']."</br>".
-                 "Nacionalidade: ".$vendedor['nascionalidade'].
+                 "Nacionalidade: ".$vendedor['nacionalidade'].
 
                  '</br><a href="./inc/excluirVendedor.php?cod='.$vendedor['codigo_vendedor'].'"><button type="button" class="btn btn-primary" style="background-color: black; border-color: black; margin-top: 20px;"><img style="width: 30px; filter: invert(1);"" src="./assets/images/excluir.png" alt="excluir" ></button></a>  
 
